@@ -1,0 +1,33 @@
+{
+  "type": "record",
+  "name": "Message",
+  "namespace": "com.frank.dto",
+  "fields": [
+    {
+      "name": "payload",
+      "type": [
+        {
+          "type": "record",
+          "name": "Employee",
+          "fields": [
+            {"name": "id", "type": "string"},
+            {"name": "firstName", "type": "string"},
+            {"name": "lastName", "type": "string"},
+            {"name": "email", "type": "string"},
+            {"name": "dob", "type": "string"},
+            {"name": "age", "type": "int"}
+          ]
+        },
+        {
+          "type": "record",
+          "name": "Student",
+          "fields": [
+            {"name": "id", "type": "string"},
+            {"name": "name", "type": "string"},
+            {"name": "grade", "type": "string"}
+          ]
+        }
+      ]
+    }
+  ]
+}
